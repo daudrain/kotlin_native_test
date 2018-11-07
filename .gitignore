@@ -1,4 +1,6 @@
-/test-build
+/*-build
 *.kexe
 *.klib
 *.dSYM
+*.so
+*.h
