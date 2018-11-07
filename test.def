@@ -1,0 +1,25 @@
+---
+
+typedef struct  {
+    int x;
+    int y;
+} SVector2D;
+
+typedef enum  {
+    ADD, SUB
+} OPERATION;
+
+void sv2d_ope_with_ptr(OPERATION o, SVector2D * a, SVector2D * b, SVector2D * c) {
+    printf("[C] sv2d_ope_with_ptr\n");
+    switch (o) {
+        case ADD:
+            c->x = a->x + b->x;
+            c->y = a->y + b->y;
+            break;
+        case SUB:
+            c->x = a->x - b->x;
+            c->y = a->y - b->y;
+            break;
+    }
+}
+
